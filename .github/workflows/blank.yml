@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send mail
+      uses: dawidd6/action-send-mail@v3
+      with:
+        connection_url: smtp://dominic.brenninkmeijer@gmail.com:jszluavxscpdsaux@smtp.gmail.com:587
+        subject: Github
+        to: dbrenninkmeijer1@gmail.com
+        from: Dominic Brenninkmeijer <dominic.brenninkmeijer@gmail.com>
+        body: Build job of ${{github.repository}} completed successfully!
