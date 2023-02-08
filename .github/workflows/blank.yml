@@ -13,6 +13,6 @@ jobs:
       with:
         connection_url: smtp://dominic.brenninkmeijer@gmail.com:jszluavxscpdsaux@smtp.gmail.com:587
         subject: Github
-        to: dbrenninkmeijer1@gmail.com
+        to: dbrenninkmeijer1@babson.edu
         from: Dominic Brenninkmeijer <dominic.brenninkmeijer@gmail.com>
         body: Build job of ${{github.repository}} completed successfully!
